@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculez votre note au bac!</title>
+</head>
+<body>
+    <div class="gradePre">
+        <p class="title">Vos notes en première :</p>
+        <div class="gradeContainer">
+            <p class="subject">Enseignement de spécialité suivi uniquement en première</p>
+            <textarea id="pre-spe"></textarea>
+        </div>
+        <div class="gradeContainer">
+            <p class="subject">Histoire-géographie</p>
+            <textarea id="pre-hige"></textarea>
+        </div>
+        <div class="gradeContainer">
+            <p class="subject">LV A (Le plus souvent Anglais)</p>
+            <textarea id="pre-lva"></textarea>
+        </div>
+        <div class="gradeContainer">
+            <p class="subject">LV B (Le plus souvent Allemand, Italien ou Espagnol)</p>
+            <textarea id="pre-lvb"></textarea>
+        </div>
+        <div class="gradeContainer">
+            <p class="subject">Enseignement scientifique/mathématiques (moyenne combinée)</p>
+            <textarea id="pre-es"></textarea>
+        </div>
+        <div class="gradeContainer">
+            <p class="subject">Enseignement moral et civique</p>
+            <textarea id="pre-emc"></textarea>
+        </div>
+    </div>
+    <div class="gradePreFr">
+        <p class="title">Vos notes aux épreuves anticipés de français :</p>
+        <div class="gradeContainer">
+            <p class="subject">Epreuve écrite</p>
+            <textarea id="pre-fr-ecr"></textarea>
+        </div>
+        <div class="gradeContainer">
+            <p class="subject">Epreuve orale</p>
+            <textarea id="pre-fr-ora"></textarea>
+        </div>
+    </div>
+    <div class="gradeTerm">
+        <p class="title">Vos notes en terminale :</p>
+        <div class="gradeContainer">
+            <p class="subject">Histoire-géographie</p>
+            <textarea id="term-hige"></textarea>
+        </div>
+        <div class="gradeContainer">
+            <p class="subject">LV A (Le plus souvent Anglais)</p>
+            <textarea id="term-lva"></textarea>
+        </div>
+        <div class="gradeContainer">
+            <p class="subject">LV B (Le plus souvent Allemand, Italien ou Espagnol)</p>
+            <textarea id="term-lvb"></textarea>
+        </div>
+        <div class="gradeContainer">
+            <p class="subject">Enseignement scientifique/mathématiques (moyenne combinée)</p>
+            <textarea id="term-es"></textarea>
+        </div>
+        <div class="gradeContainer">
+            <p class="subject">Enseignement physique et sportif</p>
+            <textarea id="term-eps"></textarea>
+        </div>
+        <div class="gradeContainer">
+            <p class="subject">Enseignement moral et civique</p>
+            <textarea id="term-emc"></textarea>
+        </div>
+    </div>
+    <div class="gradeTermBac">
+        <p class="title">Vos notes au baccalauréat :</p>
+        <div class="gradeContainer">
+            <p class="subject">Enseignement de spécialité 1</p>
+            <textarea id="term-bac-spe1"></textarea>
+        </div>
+        <div class="gradeContainer">
+            <p class="subject">Enseignement de spécialité 2</p>
+            <textarea id="term-bac-spe2"></textarea>
+        </div>
+        <div class="gradeContainer">
+            <p class="subject">Philosophie</p>
+            <textarea id="term-bac-philo"></textarea>
+        </div>
+        <div class="gradeContainer">
+            <p class="subject">Grand Oral</p>
+            <textarea id="term-bac-go"></textarea>
+        </div>
+    </div>
+    <div class="finalGrade">
+        <span id="final-grade">???</span>
+        <span>/</span>
+        <span id="total-possible-grade">???</span>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
