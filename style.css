@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    font-family: Inter;
+}
+
+@media screen and (min-width:1700px) {
+    .flexBox {
+        flex-direction: row;
+    }   
+}
+
+@media screen and (max-width:1700px) {
+    .flexBox {
+        flex-direction: column;
+    }   
+}
+
+
+.flexBox {
+    margin: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 20px;
+    padding: 15px 25px;
+    background-color: #464646;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+.allGradeContainer {
+    padding: 5px;
+    background-color: #292929;
+    border-radius: 20px;
+}
+
+.bottomGap {
+    margin-bottom: 20px;
+}
+
+.gradeContainer {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.textBox {
+    font-weight: 600;
+    font-size: 20px;
+    background-color: #464646;
+    border-radius: 10px;
+    height: 30px;
+    border: 2px solid transparent;
+    color: white;
+    resize: none;
+    flex: 1 1 1;
+    padding: 5px 15px;
+    width: 60px;
+    text-align: center;
+}
+
+.textBox:hover {
+    border: 2px solid #818181;
+}
+
+.textBox:focus {
+    border: 2px solid rgb(202, 202, 202);
+    outline: none;
+}
+
+.subject {
+    margin: 10px;
+    flex: 2;
+}

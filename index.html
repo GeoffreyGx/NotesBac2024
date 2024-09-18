@@ -3,98 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Calculez votre note au bac!</title>
 </head>
 <body>
-    <div class="gradePre">
+    <div class="flexBox">
+    <div class="allGradeContainer">
         <p class="title">Vos notes en première :</p>
         <div class="gradeContainer">
             <p class="subject">Enseignement de spécialité suivi uniquement en première</p>
-            <textarea id="pre-spe"></textarea>
+            <input class="textBox" id="pre-spe" placeholder="/20"></input>
         </div>
         <div class="gradeContainer">
             <p class="subject">Histoire-géographie</p>
-            <textarea id="pre-hige"></textarea>
+            <input class="textBox" id="pre-hige" placeholder="/20"></input>
         </div>
         <div class="gradeContainer">
             <p class="subject">LV A (Le plus souvent Anglais)</p>
-            <textarea id="pre-lva"></textarea>
+            <input class="textBox" id="pre-lva" placeholder="/20"></input>
         </div>
         <div class="gradeContainer">
             <p class="subject">LV B (Le plus souvent Allemand, Italien ou Espagnol)</p>
-            <textarea id="pre-lvb"></textarea>
+            <input class="textBox" id="pre-lvb" placeholder="/20"></input>
         </div>
         <div class="gradeContainer">
             <p class="subject">Enseignement scientifique/mathématiques (moyenne combinée)</p>
-            <textarea id="pre-es"></textarea>
+            <input class="textBox" id="pre-es" placeholder="/20"></input>
         </div>
         <div class="gradeContainer">
             <p class="subject">Enseignement moral et civique</p>
-            <textarea id="pre-emc"></textarea>
+            <input class="textBox" id="pre-emc" placeholder="/20"></input>
         </div>
     </div>
-    <div class="gradePreFr">
-        <p class="title">Vos notes aux épreuves anticipés de français :</p>
-        <div class="gradeContainer">
-            <p class="subject">Epreuve écrite</p>
-            <textarea id="pre-fr-ecr"></textarea>
-        </div>
-        <div class="gradeContainer">
-            <p class="subject">Epreuve orale</p>
-            <textarea id="pre-fr-ora"></textarea>
-        </div>
-    </div>
-    <div class="gradeTerm">
+    <div class="allGradeContainer">
         <p class="title">Vos notes en terminale :</p>
         <div class="gradeContainer">
             <p class="subject">Histoire-géographie</p>
-            <textarea id="term-hige"></textarea>
+            <input class="textBox" id="term-hige" placeholder="/20"></input>
         </div>
         <div class="gradeContainer">
             <p class="subject">LV A (Le plus souvent Anglais)</p>
-            <textarea id="term-lva"></textarea>
+            <input class="textBox" id="term-lva" placeholder="/20"></input>
         </div>
         <div class="gradeContainer">
             <p class="subject">LV B (Le plus souvent Allemand, Italien ou Espagnol)</p>
-            <textarea id="term-lvb"></textarea>
+            <input class="textBox" id="term-lvb" placeholder="/20"></input>
         </div>
         <div class="gradeContainer">
             <p class="subject">Enseignement scientifique/mathématiques (moyenne combinée)</p>
-            <textarea id="term-es"></textarea>
+            <input class="textBox" id="term-es" placeholder="/20"></input>
         </div>
         <div class="gradeContainer">
             <p class="subject">Enseignement physique et sportif</p>
-            <textarea id="term-eps"></textarea>
+            <input class="textBox" id="term-eps" placeholder="/20"></input>
         </div>
         <div class="gradeContainer">
             <p class="subject">Enseignement moral et civique</p>
-            <textarea id="term-emc"></textarea>
+            <input class="textBox" id="term-emc" placeholder="/20"></input>
         </div>
     </div>
-    <div class="gradeTermBac">
-        <p class="title">Vos notes au baccalauréat :</p>
-        <div class="gradeContainer">
-            <p class="subject">Enseignement de spécialité 1</p>
-            <textarea id="term-bac-spe1"></textarea>
+    <div class="allFinalGrades">
+        <div class="allGradeContainer bottomGap">
+            <p class="title">Vos notes aux épreuves anticipés de français :</p>
+            <div class="gradeContainer">
+                <p class="subject">Epreuve écrite</p>
+                <input class="textBox" id="pre-fr-ecr" placeholder="/20"></input>
+            </div>
+            <div class="gradeContainer">
+                <p class="subject">Epreuve orale</p>
+                <input class="textBox" id="pre-fr-ora" placeholder="/20"></input>
+            </div>
         </div>
-        <div class="gradeContainer">
-            <p class="subject">Enseignement de spécialité 2</p>
-            <textarea id="term-bac-spe2"></textarea>
-        </div>
-        <div class="gradeContainer">
-            <p class="subject">Philosophie</p>
-            <textarea id="term-bac-philo"></textarea>
-        </div>
-        <div class="gradeContainer">
-            <p class="subject">Grand Oral</p>
-            <textarea id="term-bac-go"></textarea>
+        <div class="allGradeContainer">
+            <p class="title">Vos notes au baccalauréat :</p>
+            <div class="gradeContainer">
+                <p class="subject">Enseignement de spécialité 1</p>
+                <input class="textBox" id="term-bac-spe1" placeholder="/20"></input>
+            </div>
+            <div class="gradeContainer">
+                <p class="subject">Enseignement de spécialité 2</p>
+                <input class="textBox" id="term-bac-spe2" placeholder="/20"></input>
+            </div>
+            <div class="gradeContainer">
+                <p class="subject">Philosophie</p>
+                <input class="textBox" id="term-bac-philo" placeholder="/20"></input>
+            </div>
+            <div class="gradeContainer">
+                <p class="subject">Grand Oral</p>
+                <input class="textBox" id="term-bac-go" placeholder="/20"></input>
+            </div>
         </div>
     </div>
-    <div class="finalGrade">
-        <span id="final-grade">???</span>
-        <span>/</span>
-        <span id="total-possible-grade">???</span>
+    <div class="allGradeContainer">
+        <p class="title">Votre note finale :</p>
+        <p id="final-grade">???</p>
+        <p>/</p>
+        <p id="total-possible-grade">???</p>
     </div>
     <script src="./script.js"></script>
+    </div>
 </body>
 </html>
