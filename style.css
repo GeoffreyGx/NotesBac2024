@@ -6,6 +6,13 @@ body {
     font-family: Inter;
 }
 
+.websiteTitle {
+    margin: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(191, 241, 248);
+}
+
 @media screen and (min-width:1240px) {
     .flexBox {
         flex-direction: row;
@@ -17,7 +24,6 @@ body {
         flex-direction: column;
     }   
 }
-
 
 .flexBox {
     margin: 20px;
@@ -119,4 +125,30 @@ input[type=number]{
 
 .margin {
     margin: 15px;
+}
+
+@media screen and (min-width:1240px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }   
+}
+
+
+.credits {
+    color: #b8b8b8;
+    margin: 0px 30px;
+}
+
+.credits a {
+    color: rgb(191, 241, 248);
+}
+
+.git {
+    color: #b8b8b8;
+    margin: 0px 30px;
+}
+
+.git a {
+    color: rgb(191, 241, 248);
 }
