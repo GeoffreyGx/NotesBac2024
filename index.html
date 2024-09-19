@@ -12,7 +12,7 @@
         <p class="title">Vos notes en première :</p>
         <div class="gradeContainer">
             <p class="subject">Enseignement de spécialité suivi uniquement en première</p>
-            <input class="textBox" id="pre-spe" placeholder="/20"></input>
+            <input class="textBox" id="pre-spe" placeholder="/20" type="number" min="0" max="20"></input>
         </div>
         <div class="gradeContainer">
             <p class="subject">Histoire-géographie</p>
@@ -96,9 +96,11 @@
     </div>
     <div class="allGradeContainer">
         <p class="title">Votre note finale :</p>
-        <p id="final-grade">???</p>
-        <p>/</p>
-        <p id="total-possible-grade">???</p>
+        <div class="finalGradeContainer">
+            <p class="finalGrade margin" id="final-grade">???</p>
+            <p class="finalGradeSeparator margin">/</p>
+            <p class="finalGrade margin" id="total-possible-grade">???</p>
+        </div>
     </div>
     <script src="./script.js"></script>
     </div>
