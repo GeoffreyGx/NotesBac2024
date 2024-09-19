@@ -6,13 +6,13 @@ body {
     font-family: Inter;
 }
 
-@media screen and (min-width:1700px) {
+@media screen and (min-width:1240px) {
     .flexBox {
         flex-direction: row;
     }   
 }
 
-@media screen and (max-width:1700px) {
+@media screen and (max-width:1240px) {
     .flexBox {
         flex-direction: column;
     }   
